@@ -3,7 +3,9 @@
   "description": "a really cool app",
   "version": "1.0.0",
   "main": "main.js",
-
+  "scripts": {
+     "start":"node main.js",
+  }
   "engines": {
     "node": "18.x"
   }
