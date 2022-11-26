@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Ticker</title>
+    <style>
+        h1 {
+            color: #1BCFFF;
+            margin: 40px 20px;
+        }
+
+        body {
+            background-color: #2B2B2B;
+            font-family: sans-serif;
+            color: white;
+        }
+        input[type=text]{
+            border: 2px solid #1BCFFF;
+            elevation: 0;
+            background-color:#2B2B2B;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 20px;
+            color: white;
+        }
+        input[type=radio]{
+            margin: 15px;
+            color: #1BCFFF;
+
+        }
+        input[type=submit]{
+            margin: 20px;
+            padding: 10px;
+            width: 100px;
+            height: 50px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Stock Ticker</h1>
+
+<form method='post' action='http://localhost:8080/process'>
+
+
+    <input type="radio" id="company" name="user" value="company" checked="checked">
+    <label for="company">Company Name</label><br>
+    <input type="radio" id="ticker" name="user" value="ticker">
+    <label for="ticker">Stock Ticker</label><br>
+
+
+    <input type='text' name='the_name'><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>
