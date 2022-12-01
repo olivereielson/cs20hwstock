@@ -1,0 +1,19 @@
+{
+  "name": "stockticker",
+  "version": "1.0.0",
+  "description": "the best cs homework",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivereielson/cs20hwstock.git"
+  },
+  "author": "oliver eielson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olivereielson/cs20hwstock/issues"
+  },
+  "homepage": "https://github.com/olivereielson/cs20hwstock#readme"
+}
