@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/olivereielson/cs20hwstock/issues"
   },
+  "dependencies": {
+    "mongoose": "latest"
+  },
+
+
   "homepage": "https://github.com/olivereielson/cs20hwstock#readme"
 }
