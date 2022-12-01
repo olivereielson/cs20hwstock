@@ -12,7 +12,7 @@ const client = new MongoClient(uri);
 http.createServer(async function (req, res) {
 
     //set up the landing page
-    if (req.url === "/") {
+    if (req.url !== "/process") {
         file = 'index.html';
         //read in index.html file
         fs.readFile(file, function (err, txt) {
