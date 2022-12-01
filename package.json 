@@ -6,7 +6,19 @@
   "scripts": {
      "start":"node main.js",
   }
+    "repository": {
+    "type": "git",
+    "url": ""
+  },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+    "url": ""
+  },
+
   "engines": {
     "node": "18.x"
   }
+    "homepage": ""
+
 }
