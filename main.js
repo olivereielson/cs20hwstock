@@ -6,6 +6,7 @@ var qs = require('querystring');
 const {MongoClient} = require("mongodb");
 const uri = "mongodb+srv://Oliver:QbNvFsf7HvC9Rb9s@cluster0.r8myo9l.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
+var port = process.env.PORT || 3000;
 
 
 //crete the http server
@@ -45,7 +46,7 @@ http.createServer(async function (req, res) {
     }
 
 
-}).listen(3000);
+}).listen(port);
 
 
 // search db function
