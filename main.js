@@ -11,17 +11,7 @@ const client = new MongoClient(uri);
 //crete the http server
 http.createServer(async function (req, res) {
 
-    //set up the landing page
-    if (req.url !== "/process") {
-        file = 'index.html';
-        //read in index.html file
-        fs.readFile(file, function (err, txt) {
-            res.writeHead(200, {'Content-Type': 'text/html'});
-            res.write(txt);
-            res.end();
-        });
-        //set up the results page and process data
-    } else if (req.url === "/process") {
+   if (req.url === "/process") {
         //connect to mongo
         await connect();
         file = 'result.html';
@@ -45,10 +35,13 @@ http.createServer(async function (req, res) {
 
 
     } else {
-        //if something goes wrong
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write("Unknown page request");
-        res.end();
+        file = 'index.html';
+        //read in index.html file
+        fs.readFile(file, function (err, txt) {
+            res.writeHead(200, {'Content-Type': 'text/html'});
+            res.write(txt);
+            res.end();
+        });
     }
 
 
