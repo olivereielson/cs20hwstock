@@ -15,10 +15,5 @@
     "bugs": {
     "url": ""
   },
-
-  "engines": {
-    "node": "18.x"
-  }
     "homepage": ""
-
 }
